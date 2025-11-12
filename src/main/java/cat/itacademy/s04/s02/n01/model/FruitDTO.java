@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class FruitDTO {
 
-    private Long id;
+    private int id;
     private String name;
     private float weight;
 

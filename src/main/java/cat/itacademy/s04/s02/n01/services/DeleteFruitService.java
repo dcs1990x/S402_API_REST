@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class DeleteFruitService implements Command<Long, Void>{
+public class DeleteFruitService implements Command<Integer, Void>{
 
     private final FruitRepositoryInterface fruitRepository;
 
@@ -19,10 +19,10 @@ public class DeleteFruitService implements Command<Long, Void>{
     }
 
     @Override
-    public ResponseEntity<Void> execute(Long fruitId) {
-        Optional<Fruit> foundFruitOptional = fruitRepository.findById(fruitId);
+    public ResponseEntity<Void> execute(Integer id) {
+        Optional<Fruit> foundFruitOptional = fruitRepository.findById(id);
         if(foundFruitOptional.isPresent()){
-            fruitRepository.deleteById(fruitId);
+            fruitRepository.deleteById(id);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
         throw new FruitNotFoundException();

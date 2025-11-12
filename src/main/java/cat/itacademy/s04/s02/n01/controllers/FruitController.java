@@ -51,7 +51,7 @@ public class FruitController {
     }
 
     @DeleteMapping("/fruit/{id}")
-    public ResponseEntity<Void> deleteFruit(@PathVariable Long id){
+    public ResponseEntity<Void> deleteFruit(@PathVariable int id){
         return deleteFruitService.execute(id);
     }
 }
