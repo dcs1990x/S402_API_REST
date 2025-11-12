@@ -3,6 +3,8 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+start-fruit-api.txt
+start_fruit_api.bat
 
 ### STS ###
 .apt_generated
