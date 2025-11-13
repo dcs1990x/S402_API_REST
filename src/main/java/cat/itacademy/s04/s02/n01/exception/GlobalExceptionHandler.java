@@ -29,6 +29,6 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public ErrorResponse handleInvalidFruitConstraints(ConstraintViolationException exception){
-        return new ErrorResponse((exception.getMessage()));
+        return new ErrorResponse(exception.getMessage());
     }
 }

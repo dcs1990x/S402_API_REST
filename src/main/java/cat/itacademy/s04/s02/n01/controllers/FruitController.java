@@ -46,7 +46,6 @@ public class FruitController {
 
     @PutMapping("/fruit/{id}")
     public ResponseEntity<FruitDTO> putFruit(@PathVariable int id, @RequestBody Fruit fruit){
-
         return updateFruitService.execute(new PutFruitCommand(id, fruit));
     }
 
