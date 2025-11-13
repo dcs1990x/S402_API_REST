@@ -151,7 +151,7 @@ INSERT INTO fruits (name, weight_in_kilos) VALUES
 
 - Clone the repository:   
 ```
-git clone https://github.com/yourusername/fruit-api-h2.git
+git clone https://github.com/dcs1990x/S402_API_REST
 ```
 
 - Build the project:   
